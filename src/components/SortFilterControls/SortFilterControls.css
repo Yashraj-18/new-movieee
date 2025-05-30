@@ -1,0 +1,146 @@
+.sort-filter-controls {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sort-filter-controls__section {
+  margin-bottom: 20px;
+}
+
+.sort-filter-controls__section:last-child {
+  margin-bottom: 0;
+}
+
+.sort-filter-controls__section h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.sort-filter-controls__section h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.sort-filter-controls__buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sort-filter-controls__button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sort-filter-controls__button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.sort-filter-controls__button.active {
+  background: #e50914;
+  border-color: #e50914;
+  color: #fff;
+}
+
+.sort-filter-controls__filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sort-filter-controls__filter-group {
+  margin-bottom: 15px;
+}
+
+.sort-filter-controls__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sort-filter-controls__chip {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.sort-filter-controls__chip:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.sort-filter-controls__chip.active {
+  background: #e50914;
+  border-color: #e50914;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sort-filter-controls {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .sort-filter-controls__section h3 {
+    font-size: 1.1rem;
+  }
+
+  .sort-filter-controls__button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .sort-filter-controls__chip {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sort-filter-controls {
+    padding: 12px;
+  }
+
+  .sort-filter-controls__buttons {
+    gap: 8px;
+  }
+
+  .sort-filter-controls__button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .sort-filter-controls__chips {
+    gap: 6px;
+  }
+
+  .sort-filter-controls__chip {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+} 

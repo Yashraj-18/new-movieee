@@ -1,0 +1,69 @@
+.movie-labels {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+  pointer-events: none;
+  width: auto;
+  height: auto;
+}
+
+.movie-label {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  animation: labelFadeIn 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+}
+
+.movie-label--binge {
+  background: linear-gradient(135deg, #00c853, #69f0ae);
+  color: #003300;
+  border: 1px solid rgba(0, 200, 83, 0.3);
+}
+
+.movie-label--long {
+  background: linear-gradient(135deg, #ff6d00, #ffab40);
+  color: #3e2723;
+  border: 1px solid rgba(255, 109, 0, 0.3);
+}
+
+.movie-label--hidden {
+  background: linear-gradient(135deg, #7b1fa2, #ce93d8);
+  color: #ffffff;
+  border: 1px solid rgba(123, 31, 162, 0.3);
+}
+
+@keyframes labelFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-labels {
+    top: 8px;
+    left: 8px;
+    gap: 4px;
+  }
+
+  .movie-label {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+} 

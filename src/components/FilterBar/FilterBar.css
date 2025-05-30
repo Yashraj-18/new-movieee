@@ -1,0 +1,115 @@
+.filter-bar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.filter-bar__section {
+  margin-bottom: 20px;
+}
+
+.filter-bar__section:last-child {
+  margin-bottom: 0;
+}
+
+.filter-bar__section h4 {
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-bar__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-bar__genre-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e5e5e5;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar__genre-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.filter-bar__genre-btn.active {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.filter-bar__range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-bar__range input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  width: 80px;
+  font-size: 14px;
+}
+
+.filter-bar__range input:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.filter-bar__range span {
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+.filter-bar__select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-bar__select:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.filter-bar__select option {
+  background-color: #000;
+  color: #fff;
+}
+
+.filter-bar__clear {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e5e5e5;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.filter-bar__clear:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #e50914;
+  color: #fff;
+} 
