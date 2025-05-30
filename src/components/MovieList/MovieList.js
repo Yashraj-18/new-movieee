@@ -50,10 +50,18 @@ const MovieList = ({ selectedGenre, isMyList = false }) => {
         return;
       }
 
+      // Log API configuration
+      console.log('API Configuration:', {
+        BASE_URL,
+        API_KEY: API_KEY ? 'API Key is set' : 'API Key is missing',
+        searchTerm: selectedGenre ? genreSearchTerms[selectedGenre] : 'movie'
+      });
+
       // OMDB API search with pagination
       const searchTerm = selectedGenre ? genreSearchTerms[selectedGenre] : 'movie';
       const url = `${BASE_URL}/?apikey=${API_KEY}&type=movie&s=${searchTerm}&page=${pageNum}`;
-
+      
+      console.log('Fetching movies from URL:', url);
       const response = await fetch(url);
       const data = await response.json();
       console.log('Search API Response:', data);
